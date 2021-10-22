@@ -1,9 +1,9 @@
 start: q0
 accepting: {q0,final}
 
-q0 (a,$->aaa$,q1)
-q1 (a,a->aaaa,q1) (_,_->_,q2)
-q2 (b,a->_,q3) (_,$->$,final)
-q3 (b,a->_,q4)
-q4 (b,a->_,q2)
+q0 (a,$ -> aaa$,q1)
+q1 (a,a -> aaaa,q1) (b,a -> _,q2) (_,$ -> $,final)
+q2 (b,a -> _,q3) 
+q3 (b,a -> _,q1)
+final 
 
