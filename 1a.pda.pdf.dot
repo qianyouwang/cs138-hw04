@@ -5,9 +5,10 @@ digraph {
   node [shape = circle]; q2;
 
   __start -> q0 [arrowhead = empty];
-  q0 -> q0 [label = "a,$->$aaa"];
+  q0 -> q0 [label = "a,$->aaa$"];
   q0 -> q0 [label = "a,a->aaaa"];
   q0 -> q2 [label = "b,a->ε"];
+  q0 -> q2 [label = "ε,$->$"];
   q2 -> q2 [label = "b,a->ε"];
   q2 -> q1 [label = "ε,$->$"];
 }

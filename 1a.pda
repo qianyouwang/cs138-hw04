@@ -1,7 +1,7 @@
 start: q0
 accepting: {q0,final}
 
-q0 (a,$ -> aaa$,q0) (a,a -> aaaa,q0) (b,a -> _,q1)
+q0 (a,$ -> $aaa,q0) (a,a -> aaaa,q0) (b,a -> _,q1) (_,$ -> $,q1)
 q1 (b,a -> _,q1) (_,$ -> $,final)
 final 
 
