@@ -3,14 +3,11 @@ digraph {
   node [shape = doublecircle]; q0;
   node [shape = doublecircle]; q1;
   node [shape = circle]; q2;
-  node [shape = circle]; q3;
-  node [shape = circle]; q4;
 
   __start -> q0 [arrowhead = empty];
-  q0 -> q2 [label = "a,$->$aaa"];
-  q2 -> q2 [label = "a,a->aaaa"];
-  q2 -> q3 [label = "b,a->ε"];
+  q0 -> q0 [label = "a,$->$aaa"];
+  q0 -> q0 [label = "a,a->aaaa"];
+  q0 -> q2 [label = "b,a->ε"];
+  q2 -> q2 [label = "b,a->ε"];
   q2 -> q1 [label = "ε,$->$"];
-  q3 -> q4 [label = "b,a->ε"];
-  q4 -> q2 [label = "b,a->ε"];
 }
